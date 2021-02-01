@@ -3,94 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nivedita Rani, Front-end Developer + UX designer</title>
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" href="Images/apple-touch-icon-iphone-60x60.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="Images/apple-touch-icon-ipad-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="Images/apple-touch-icon-iphone-retina-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="Images/apple-touch-icon-ipad-retina-152x152.png">
-    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <title>Nivedita Rani | Front-end Developer + UX designer</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet"> -->
+    <link rel="shortcut icon" href="Images/iconified/favicon.ico" type="Images/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="Images/iconified/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="Images/iconified/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="Images/iconified/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="Images/iconified/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="Images/iconified/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="Images/iconified/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="Images/iconified/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/iconified/apple-touch-icon-180x180.png" />
     <link rel="stylesheet" href="CSS/styles.css" media="all">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <!-- <script>
+        function refreshDataWithRandomDelay() {
+            var minSeconds = 30;
+            var maxSeconds = 30;
+            var minMilliseconds = minSeconds * 1000;
+            var extraMilliseconds = (maxSeconds - minSeconds) * 1000;
+            setTimeout(refreshData, minMilliseconds + Math.random() * (extraMilliseconds));
+        }
+        window.addEventListener("load", refreshDataWithRandomDelay, false);
+    </script> -->
 </head>
 <body>
-    <main>
-        <!--****************************************About Profile**************************************************-->
+    <div class="loader hidden">
+        <img src="Images/pageloader.png" alt="Nivedita Rani"/>
+
+    </div>
+    <!--****************************************Header**************************************************-->
         <header>
-            <div class="content-wrap">
-                <h1>Nivedita Rani</h1>
-                <h2>Front-end Developer + UX Designer</h2>
+            <div class="heading">
+                <!-- <div class="firstName">Nivedita Rani</div> -->
+                <h2>Nivedita Rani<br>Front-end Developer + UX Designer</h2>
+                <!-- <div class="jobDes">Front-end Developer + UX Designer</div> -->
+                <!-- <img src="images/heading.png" alt="Nivedita Rani"/> -->
+                <!--*********************Hamburger menu**********************************-->
+                <div class="menu-btn">
+                    <div class="menu-btn__lines"></div>
+                </div>
+                    <!-- <div role="doc-subtitle">Front-end Developer + UX Designer</div> -->
+            <!--*********************Navigation**********************************-->   
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="myPortfolio.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
+                        <div class="active"></div>    <!--this is for the line-->
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="myPortfolio.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
-                    <div class="active"></div>    <!--this is for the line-->
-                </ul>
-            </nav>
-            
         </header>
-        <!-- <div class="main-content"> -->
-            <div class="content-wrap">
-                <div class="box"></div>
-                <div class="head-shot">
-                    <img src="Images/Profile_pic (1).png" alt="A smiling girl"></img></a>
-                </div>
-                <div class="tagline">
+        <!--------------------------"main-content"---------------------------------- -->
+        <section class="sec hero-sec">
+            <div class="hero-col">
                 <p>I focus on creating scalable, inclusive and modular front-end designs!</p>
-                </div>
                 <button class="button">Let's talk</button>
             </div>
+            <div class="hero-col hero-img">
+                <img src="Images/Profile_pic (1).png" alt="Profile-picture"/>
+            </div>
+            <div class="custom-shape-divider-bottom-1611598393">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
 
         <!--*************************Tools & technologies used************************-->
-        
-        <div class="content-wrap">
-            <h3>Tools & Technologies used</h3>
-            <!-- The grid: four columns -->
-            <div class="grid-container">
-                <div class="col">
-                    <figure class="grid-item side1">
-                        <img src="Images/vscode-min.png" alt="Visual Studio Code">
-                    </figure>
-                </div>
-                <div class="col">
-                    <figure class="grid-item side2">
-                        <img src="Images/html5.png" alt="HTML5">
-                    </figure>
-                </div>
-                <div class="col">
-                    <figure class="grid-item side3">
-                        <img src="Images/css3.png" alt="CSS3">
-                    </figure>
-                </div>
-                <div class="col">
-                    <figure class="grid-item side4">
-                        <img src="Images/bootstrap.png" alt="Bootstrap">
-                    </figure>
-                </div>
-                <div class="col">
-                    <figure class="grid-item side5">
-                        <img src="Images/codepen.png" alt="Codepen">
-                    </figure>
-                </div> 
-                <div class="col">
-                    <figure class="grid-item side6">     
-                        <img src="Images/firefox dev tool.jpg" alt="Firefox Developers tool">
-                    </figure>
-                </div>
-                <div class="col">
-                    <figure class="grid-item side7">
-                        <img src="Images/w3c.png" alt="w3c">
-                    </figure>
-                </div>
-                <div class="col">
-                    <figure class="grid-item side8">
-                        <img src="Images/google fonts.png" alt="Google fonts">
-                    </figure>
-                </div>
+        <section class="another-sec">
+            <div class="another-col">
+                <h1>Technologies</h1>
+                <h2>& Tools Used</h2>
+                <img src="Images/Toolsused.jpg" alt="Collage"/>
             </div>
-        </div>
+        </section>
+        
     <!-------------------------------------------------->
        <div class="clearfooter"></div>
     
@@ -103,19 +94,25 @@
                 <div class="center">
                     <div id="social">
                         <ul class="contact-list">
-                            <li class="email"><button class="border"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:nivedita.rani19@gmail.com"></a></button></li>
-                            <li class="linkedin"><button class="border"><i class="fa fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/nivedita-rani/"></a></button></li>
-                            <li class="github"><button class="border"><i class="fa fa-github" aria-hidden="true"></i><a href="#" target="_blank"></a></button></li>
-                            <li class="codepen"><button class="border"><i class="fa fa-codepen" aria-hidden="true"></i><a href="#" target="_blank"></a></button></li>
-                            <li class="instagram"><button class="border"><i class="fa fa-instagram" aria-hidden="true"></i><a href="#" target="_blank"></a></button></li>
+                            <li class="email" title="gmail"><button class="border"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:nivedita.rani19@gmail.com"></a></button></li>
+                            <li class="linkedin" title="linkedin"><button class="border"><i class="fa fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/nivedita-rani/"></a></button></li>
+                            <li class="github" title="github"><button class="border"><i class="fa fa-github" aria-hidden="true"></i><a href="#" target="_blank"></a></button></li>
+                            <li class="codepen" title="codepen"><button class="border"><i class="fa fa-codepen" aria-hidden="true"></i><a href="#" target="_blank"></a></button></li>
+                            <!-- <li class="instagram"><button class="border"><i class="fa fa-instagram" aria-hidden="true"></i><a href="#" target="_blank"></a></button></li> -->
                         </ul>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p><i class="fa fa-copyright" aria-hidden="true"></i> Nivedita Rani 2020 | Developed with <i class="fa fa-heart" aria-hidden="true"></i></p>
+                    <p><i class="fa fa-copyright" aria-hidden="true"></i><small> Nivedita Rani 2020 | Developed with </small><i class="fa fa-heart" aria-hidden="true"></i></p>
                 </div>
             </div>
           </footer>
-        </main>
+        
+        <!-- <script type="text/javascript">
+            window.addEventListener("load", function(){
+                const loader = document.querySelector(".loader")
+                loader.className += " hidden";       //class Name here is "loader hidden"
+            });
+        </script> -->
 </body>
 </html>
