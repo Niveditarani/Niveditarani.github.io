@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="Images/iconified/apple-touch-icon-144x144.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="Images/iconified/apple-touch-icon-152x152.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="Images/iconified/apple-touch-icon-180x180.png" />
-    <link rel="stylesheet" href="CSS/styles.css" media="all">
+    <link rel="stylesheet" href="CSS/styles1.css" media="all">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <script src="main.js" defer></script>
     <!-- <script>
@@ -38,7 +38,7 @@
         <header>
             <div class="heading">
                 <!-- <div class="firstName">Nivedita Rani</div> -->
-                <h2>Nivedita Rani<br>Front-end Developer + UX Designer</h2>
+                <h2><span class="name">Nivedita Rani</span><br><small>Front-end Developer + UX Designer</small></h2>
                 <!-- <div class="jobDes">Front-end Developer + UX Designer</div> -->
                 <!-- <img src="images/heading.png" alt="Nivedita Rani"/> -->
                 <!--*********************Hamburger menu**********************************-->
@@ -48,12 +48,15 @@
                     <!-- <div role="doc-subtitle">Front-end Developer + UX Designer</div> -->
             <!--*********************Navigation**********************************-->   
                 <nav>
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="myPortfolio.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
-                        <div class="active"></div>    <!--this is for the line-->
-                    </ul>
+                    <!-- <div class="menu"> -->
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="myPortfolio.html">Home</a></li>
+                            <li class="nav-item"><a href="#">Projects</a></li>
+                            <li class="nav-item"><a href="#">Blogs</a></li>
+                            <li class="nav-item"><a href="#">Resume</a></li>
+                            <div class="active"></div>    <!--this is for the line-->
+                        </ul>
+                    <!-- </div> -->
                 </nav>
             </div>
         </header>
@@ -61,7 +64,7 @@
         <section class="sec hero-sec">
             <div class="hero-col">
                 <p>I focus on creating scalable, inclusive and modular front-end designs!</p>
-                <button class="button">Let's talk</button>
+                <button class="button" id="popup" onclick="div_show()">Let's talk</button>
             </div>
             <div class="hero-col hero-img">
                 <img src="Images/Profile_pic (1).png" alt="Profile-picture"/>
@@ -72,9 +75,50 @@
                 </svg>
             </div>
         </section>
-
+        <!--*************************Contact-Me Form************************-->
+            <!-- <div id="body" style="overflow:hidden;"> -->
+                <div id="popupPage">
+                    <!-- Popup Div Starts Here -->
+                    <div id="popupContact">
+                        <!-- Contact Us Form -->
+                        <form action="#" id="form" method="post" class="contactForm">
+                            <fieldset>
+                                <!-- <legend>Hi there!</legend> -->
+                                <h2 id="hi">Hi There!<span onclick="div_hide()" class="close">&#x2717;</span></h2>
+                                <p>I'd love to hear from you, send me a message and I'll be back in touch with you within 24 hours.</p>
+                                <!-- <img id="close" src="Images/close.svg" onclick="div_hide()"> -->
+                                <div class="field">
+                                    <input type="text" id="name" name="name" placeholder=" " required>
+                                    <label for="name">Name*</label>
+                                  </div>
+                                <!-- <input id="name" name="name" placeholder="Name" type="text"> -->
+                                <div class="field">
+                                    <input type="email" name="email" id="email" placeholder=" " required>
+                                    <label for="email">Email*</label>
+                                    <!-- <input id="email" name="email" placeholder="Email" type="text"> -->
+                                </div>
+                                <div class="field">
+                                    <textarea name="msg" id="msg" placeholder=" " required></textarea>
+                                    <label for="msg">Please write your inquiry*</label>
+                                </div>
+                                <!-- <textarea id="msg" name="message" placeholder="Message/ Question" type="text"></textarea> -->
+                                
+                                <!-- <div class="checks">
+                                    <input type="checkbox" name="copyEmail" id="copyEmail">
+                                    <span></span>
+                                    <label for="copyEmail">Send copy to my-email</label>
+                                </div> -->
+                                
+                                <input type="submit" id="submit" value="Send Message">
+                                <a href="check_empty()"></a>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- Popup Div Ends Here -->
+                </div>
+            <!-- </div> -->
         <!--*************************Tools & technologies used************************-->
-        <section class="another-sec">
+        <section class="sec another-sec">
             <div class="another-col">
                 <h1>Technologies</h1>
                 <h2>& Tools Used</h2>
@@ -103,7 +147,7 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p><i class="fa fa-copyright" aria-hidden="true"></i><small> Nivedita Rani 2020 | Developed with </small><i class="fa fa-heart" aria-hidden="true"></i></p>
+                    <p><i class="fa fa-copyright" aria-hidden="true"></i><small>Nivedita Rani 2020 | Developed with</small><i class="fa fa-heart" aria-hidden="true"></i></p>
                 </div>
             </div>
           </footer>
