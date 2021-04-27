@@ -16,64 +16,58 @@
     <link rel="apple-touch-icon" sizes="152x152" href="Images/iconified/apple-touch-icon-152x152.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="Images/iconified/apple-touch-icon-180x180.png" />
     <link rel="stylesheet" href="CSS/styles1.css" media="all">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <script src="main.js" defer></script>
-    <!-- <script>
-        function refreshDataWithRandomDelay() {
-            var minSeconds = 30;
-            var maxSeconds = 30;
-            var minMilliseconds = minSeconds * 1000;
-            var extraMilliseconds = (maxSeconds - minSeconds) * 1000;
-            setTimeout(refreshData, minMilliseconds + Math.random() * (extraMilliseconds));
-        }
-        window.addEventListener("load", refreshDataWithRandomDelay, false);
-    </script> -->
 </head>
-<body>
-    <div class="loader hidden">
-        <img src="Images/pageloader.png" alt="Nivedita Rani"/>
 
-    </div>
+<body>
+    <section>
     <!--****************************************Header**************************************************-->
         <header>
             <div class="heading">
-                <!-- <div class="firstName">Nivedita Rani</div> -->
                 <h2><span class="name">Nivedita Rani</span><br><small>Front-end Developer + UX Designer</small></h2>
-                <!-- <div class="jobDes">Front-end Developer + UX Designer</div> -->
-                <!-- <img src="images/heading.png" alt="Nivedita Rani"/> -->
+                
                 <!--*********************Hamburger menu**********************************-->
                 <div class="menu-btn">
                     <div class="menu-btn__lines"></div>
                 </div>
-                    <!-- <div role="doc-subtitle">Front-end Developer + UX Designer</div> -->
+                    
             <!--*********************Navigation**********************************-->   
                 <nav>
-                    <!-- <div class="menu"> -->
-                        <ul class="nav-list">
+                    <ul class="nav-list">
                             <li class="nav-item"><a href="myPortfolio.html">Home</a></li>
                             <li class="nav-item"><a href="#">Projects</a></li>
                             <li class="nav-item"><a href="#">Blogs</a></li>
-                            <li class="nav-item"><a href="#">Resume</a></li>
+                            <li class="nav-item"><a href="#">About</a></li>
                             <div class="active"></div>    <!--this is for the line-->
-                        </ul>
-                    <!-- </div> -->
+                    </ul>    
                 </nav>
             </div>
         </header>
+        <div class="sec">
+            <p>I focus on creating scalable, inclusive and modular front-end designs!</p>
+            <button class="button" id="popup" onclick="div_show()">Let's talk</button>
+        </div>
+        <div class="custom-shape-divider-bottom-1619557739">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
         <!--------------------------"main-content"---------------------------------- -->
-        <section class="sec hero-sec">
-            <div class="hero-col">
+        <section >
+            <!-- <div class="sec hero-sec">
                 <p>I focus on creating scalable, inclusive and modular front-end designs!</p>
                 <button class="button" id="popup" onclick="div_show()">Let's talk</button>
-            </div>
+            </div> -->
             <div class="hero-col hero-img">
                 <img src="Images/Profile_pic (1).png" alt="Profile-picture"/>
             </div>
-            <div class="custom-shape-divider-bottom-1611598393">
+            <!-- <div class="custom-shape-divider-bottom-1611598393">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
                 </svg>
-            </div>
+            </div> -->
         </section>
         <!--*************************Contact-Me Form************************-->
             <!-- <div id="body" style="overflow:hidden;"> -->
@@ -117,15 +111,28 @@
                     <!-- Popup Div Ends Here -->
                 </div>
             <!-- </div> -->
-        <!--*************************Tools & technologies used************************-->
-        <section class="sec another-sec">
-            <div class="another-col">
-                <h1>Technologies</h1>
-                <h2>& Tools Used</h2>
-                <img src="Images/Toolsused.jpg" alt="Collage"/>
+        <!--*************************Projects************************-->
+        <section>
+            <div class="container">
+                <h2 class="project">Projects</h2>
+                <div class="cards">
+                    <h3>Weather-App</h3>
+                    <div class="text-card">
+                        <a href="">
+                            <img src="Images/weatherApp.png" alt="weather-app" width="250" height= "250">
+                        </a>
+                        <p>This weather app created using HTML, CSS & vanilla-Javascript with no hidden plugins or frameworks. It's responsive and cross-browser compatible.</p>  
+                    </div>
+                </div>
             </div>
         </section>
-        
+        <div class="content">
+            <div class="info">
+                   <h2>Like Nature <br><span>Be Creative!</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <a href="#" class="info-btn">More Info</a>
+          </div>
+        </div>
     <!-------------------------------------------------->
        <div class="clearfooter"></div>
     
@@ -138,16 +145,16 @@
                 <div class="center">
                     <div id="social">
                         <ul class="contact-list">
-                            <li class="email" title="gmail"><button class="border"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:nivedita.rani19@gmail.com"></a></button></li>
-                            <li class="linkedin" title="linkedin"><button class="border"><i class="fa fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/nivedita-rani/"></a></button></li>
-                            <li class="github" title="github"><button class="border"><i class="fa fa-github" aria-hidden="true"></i><a href="#" target="_blank"></a></button></li>
-                            <li class="codepen" title="codepen"><button class="border"><i class="fa fa-codepen" aria-hidden="true"></i><a href="#" target="_blank"></a></button></li>
+                            <li class="email" title="gmail"><button class="border"><i class="fas fa-envelope"  aria-hidden="true"></i><a href="mailto:nivedita.rani19@gmail.com"></a></button></li>
+                            <li class="linkedin" title="linkedin"><button class="border"><i class="fab fa-linkedin-in"  aria-hidden="true"></i><a href="https://www.linkedin.com/in/nivedita-rani/"></a></button></li>
+                            <li class="github" title="github"><button class="border"><i class="fab fa-github" aria-hidden="true"></i><a href="#" target="_blank"></a></button></li>
+                            <li class="codepen" title="codepen"><button class="border"><i class="fab fa-codepen"  aria-hidden="true"></i><a href="#" target="_blank"></a></button></li>
                             <!-- <li class="instagram"><button class="border"><i class="fa fa-instagram" aria-hidden="true"></i><a href="#" target="_blank"></a></button></li> -->
                         </ul>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p><i class="fa fa-copyright" aria-hidden="true"></i><small>Nivedita Rani 2020 | Developed with</small><i class="fa fa-heart" aria-hidden="true"></i></p>
+                    <p><i class="far fa-copyright" aria-hidden="true"></i><small>Nivedita Rani 2020 | Developed with</small><i class="fas fa-heart" aria-hidden="true"></i></p>
                 </div>
             </div>
           </footer>
